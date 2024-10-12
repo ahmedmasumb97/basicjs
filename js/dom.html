@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body onload="design()" onundo="design1()" id="body">
+
+   <h1>DOM(doucument object model)</h1>
+  <p>With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
+ </p>
+
+ <h1 style=" box-shadow:300px ">The HTML DOM (Document Object Model)
+</h1>
+
+<p>When a web page is loaded, the browser creates a Document Object Model of the page.
+The HTML DOM model is constructed as a tree of Objects:
+</p>
+
+<p>Html dom method are actons you can perform on html element</p>
+<p>html dom properties are values(html element) that you can set or change</p>
+
+<p>in html all the tag or element(p,h1,span are tag or element) are object to js dom and all the propetise of html tag like color,width and etc are treat as  js dom object propertise</p>
+
+<h2>DOM</h2>
+<p><strong>Document</strong>:Refers to the web document (usually an HTML or XML file) that is being displayed in the browser. The DOM represents this document as a structured format that can be manipulated. </p>
+
+<p><strong>Object:</strong>The document is modeled as a collection of objects or nodes. Every element (like a paragraph, image, or link) is treated as an object that can be accessed and modified. In JavaScript, for example, these objects have properties and methods you can interact with. </p>
+
+<p><strong>Model:</strong>  The DOM creates a model or tree-like structure of the document, where each node is a representation of the parts of the document. This hierarchical model allows developers to navigate and manipulate the structure and content of the document.</p>
+
+<h1>What is the HTML DOM?
+</h1>
+
+<p>The HTML DOM is a standard object model and programming interface for HTML. It defines:</p>
+
+<ul>
+    <li>The HTML elements as objects</li>
+    <li>The properties of all HTML elements</li>
+    <li>The methods to access all HTML elements</li>
+    <li>The events for all HTML elements</li>
+</ul>
+<p>In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</p>
+
+<h1>form submit</h1>
+<form name="sumbit" action="">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="mohmmad"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" name="lname" id="lname" value="masum">
+    <input type="submit" value="Submit">
+</form>
+
+
+
+<h1>form download</h1>
+<form action="" name="download">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="hasan"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" name="lname" id="lname" value="ahmed">
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
+<h1>form reset</h1>
+<form  name="reset">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" ><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" name="lname" id="lname1" placeholder="enter last name">
+    <p id="demo1"></p>
+    <button type="button" onclick="function1() ">Click</button>
+</form>
+
+
+<!-- //js dom for css clsass -->
+
+
+<p id="demo2">this is text for me</p>
+<button type="button" id="btn1">click</button>
+
+
+<br>
+<br>
+<button type="button" id="btn2">Click</button>
+
+<div id="parent">
+    <div id="child"></div>
+</div>
+
+
+
+
+
+
+<p id="demo3" onclick="chnageFunction(this)">I am p text</p>
+
+<!-- oninput -->
+
+
+<input type="text" id="myInput" input="uppercase()" placeholder="enter email">
+
+<!-- onchnage event -->
+
+<br><br>
+<input type="text" id="myInput1" change="chnageFunction1()">
+
+
+<!-- onmouse hover and mouse out -->
+<p id="demo4" onmouseover="func1(this)" onmouseout="func2(this)">keep mouse over me </p>
+
+
+<!-- mousedown and mouseup -->
+
+<p id="demo5" onmousedown="func3(this)" onmouseout="func4(this)">click me</p>
+
+
+<!-- addenventlisener -->
+
+
+<p id="demo6">this is p text</p>
+<p id="pid"></p>
+
+
+<button type="button" id="demo7">Clcik</button>
+
+
+<!-- envent bubbling or event capturing -->
+
+<div id="parent1" style="width: 100px; background-color:rgb(87, 16, 219); margin:10px auto">
+    <button id="child1" style="width: 100px;">click</button>
+</div>
+
+<!-- envent capturing -->
+<div id="parent2" style="width: 100px; background-color:rgb(87, 16, 219); margin:10px auto">
+    <button id="child2" style="width: 100px;">click</button>
+</div>
+
+
+
+
+<!-- remove envenlistener -->
+
+<p id="pt1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nulla corporis magnam ea laudantium id molestiae esse hic eum. Voluptatum voluptate porro blanditiis quia magni quas sequi veritatis mollitia velit?</p>
+<button type="button" id="demo10">remove</button>
+<p id="demo11"></p>
+
+
+
+
+
+
+
+<!-- js dom nodes -->
+
+
+<div class="parent-div">
+    <div class="child-div">
+        <p class="grand-child1">I am grand child and previous sumling and firstchild of child div</p>
+        <p class="grand-child2">next subling</p>
+        <p class="grand-child3"></p>
+        <p class="grand-child4">last child of child div</p>
+    </div>
+</div>
+
+
+<!-- nodes -->
+
+<div class="div">
+    <p class="item1">this is first p text</p>
+    <p class="item2">this is second p text</p>
+    <p class="item3">this is third p text</p>
+    <p class="item4">this is fourth p text</p>
+    <p class="item5">this is fifth p text</p>
+</div>
+
+
+
+    <script  src="./dom.js"></script>
+</body>
+</html>

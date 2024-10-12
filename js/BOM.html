@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object model</title>
+</head>
+<body>
+
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+
+    <input type="button" name="button1" value="Open" id="button" onclick="openbtn()">
+    <input type="button" name="button2" value="Close" id="closebtn" onclick="closebtn()">
+
+    <p class="deno1"></p>
+
+    <!-- window assagn -->
+    <input type="button" value="Load new document" onclick="newDoc()">
+    <input type="button" value="forward" onclick="forward()">
+    <input type="button" value="Back" onclick="goBack()">
+
+    <p class="deno2"></p>
+    <p class="deno3"></p>
+    <p class="deno4"></p>
+    <p class="deno5"></p>
+    <p class="deno6"></p>
+    <p class="deno7"></p>
+    <p class="deno8"></p>
+
+
+
+    <!-- js popup box -->
+     <p id="text1"></p>
+     <p id="text2"></p>
+
+     <input type="button" value="alart" onclick="popup1()">
+     <input type="button" value="confirm" onclick="popup2()">
+     <input type="button" value="prompt" onclick="popup3()">
+
+
+<!-- JavaScript Timing Events -->
+<!-- 
+Timing Events
+The window object allows execution of code at specified time intervals.
+
+These time intervals are called timing events.
+
+The two key methods to use with JavaScript are:
+
+setTimeout(function, milliseconds)
+Executes a function, after waiting a specified number of milliseconds.
+
+setInterval(function, milliseconds)
+Same as setTimeout(), but repeats the execution of the function continuously.
+
+     -->
+
+<!-- 
+     The setTimeout() and setInterval() are both methods of the HTML DOM Window object. -->
+
+
+
+    
+
+
+
+
+     <!-- The setTimeout() Method
+     window.setTimeout(function, milliseconds);
+     The window.setTimeout() method can be written without the window prefix.
+     
+     The first parameter is a function to be executed.
+     
+     The second parameter indicates the number of milliseconds before execution.
+     
+     
+ -->
+
+
+
+<p id="timeouttext"></p>
+<button type="button" onclick="timeout()">setTimeOut</button>
+<button type="button" onclick="finshedtimeout()">clear time out</button>
+
+
+
+
+
+<p id="intervaltext"></p>
+<button type="button" onclick="setinterval()">set interval </button>
+<button type="button" onclick="finshedinterval()">clear time out</button>
+
+
+
+
+
+<!-- cookie -->
+
+
+<h1>js Cookie</h1>
+<input type="button" value="set name cookie" onclick="createCookie('name','mausm',2)">
+<input type="button" value="set username" onclick="createCookie('usename','hasan',2)">
+<input type="button" name="getcookie" id="getcookie" value="Get Cookie" onclick="getCookie('name')">
+<input type="button" value="Check cookie" name="checkcookie" onclick="checkCookie()">
+
+
+
+
+
+
+
+    <script src="./BOM.js"></script>
+</body>
+</html>
